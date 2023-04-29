@@ -6,17 +6,13 @@ interface Props {
 }
 
 const CreateTodoCard = ({ onAdd }: Props) => {
-  const [title, setTitle] = useState("");
-
-  const createTodo = () => {
-    onAdd(title);
-  };
+const [title, setTitle] = useState("");
 
   return (
     <TextField
       value={title}
       onChange={(e) => setTitle(e.target.value)}
-      onBlur={createTodo}
+      onBlur={() => {onAdd(title)}}
     />
   );
 };

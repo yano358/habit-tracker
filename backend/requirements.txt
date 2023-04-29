@@ -1,7 +1,6 @@
 alembic==1.10.2
 anyio==3.6.2
 asyncpg==0.27.0
-certifi @ file:///Users/ec2-user/ci_py311/certifi_1678321191472/work/certifi
 click==8.1.3
 fastapi==0.95.0
 greenlet==2.0.2
