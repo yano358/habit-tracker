@@ -6,9 +6,10 @@ from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import AsyncEngine
 from sqlmodel import SQLModel
 
-
 from alembic import context
-import models.Habit
+
+from models.task import Task
+from models.todo_list import TodoList
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -12,6 +12,6 @@ def get_settings():
 api_engine = create_engine(get_settings().DATABASE_URI, echo=True)
 
 
-async def get_session():
+async def get_db_session():
     with Session(api_engine) as session:
         yield session
